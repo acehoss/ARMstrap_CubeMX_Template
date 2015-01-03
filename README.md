@@ -9,6 +9,8 @@ runs on Windows.)
 ## Using this project
 1. Download repository as zip (probably less messy than cloning)
 2. Import as archived project into ARMstrap Eclipse workspace
+   (Assumes you're using the Eclipse bundle from the ARMstrap
+   website)
 3. Rename/copy template to the project name you want to use
 4. Open the *ARMstrap Eagle 4x7.ioc* file with STM32CubeMX
    (assumes you've already downloaded it from STM and installed it)
