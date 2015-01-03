@@ -39,6 +39,12 @@ runs on Windows.)
    If you try to build before this, you'll get many, many errors.
    After uncommenting the appropriate line, you should be able
    to build successfully.
+
+   If you've selected any of the middlewares, you'll likely need
+   to add some additional paths to *Project Preferences > C/C++ General > Paths and Symbols > Includes*
+   to get the code to build correctly. I haven't played with
+   the middlewares enough to be able to set up default includes
+   for them.
 8. One thing I haven't figured out yet (not sure if it's even 
    possible) is to persist the debug configurations in the project. 
    They appear to be stored at the workspace level. So when you 
