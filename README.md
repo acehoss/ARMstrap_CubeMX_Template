@@ -14,7 +14,7 @@ runs on Windows.)
    (assumes you've already downloaded it from STM and installed it)
 5. Configure the peripherals, pins, clocks, and etc. The pins
    that are used on-board have already been pinned and named (and
-   (you'll notice *(OB)* after the names of pins only routed
+   you'll notice *(OB)* after the names of pins only routed
    on-board).
 
    These pinned pins will make peripherals blocked by them
