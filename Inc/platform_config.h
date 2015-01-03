@@ -9,7 +9,12 @@
 #define PLATFORM_CONFIG_H_
 
 #include <stm32f4xx_hal_gpio.h>
+#include <stm32f4xx_hal_dma.h>
 #include <stm32f4xx_hal_spi.h>
+#include <stm32f4xx_hal_uart.h>
+
+extern SPI_HandleTypeDef hspi3;
+extern UART_HandleTypeDef huart2;
 
 #define USER_BUTTON_PORT     GPIOC
 #define USER_BUTTON_PIN      GPIO_PIN_0
@@ -24,8 +29,5 @@
 #define FLASH_CS_PORT        GPIOC
 #define FLASH_CS_PIN         GPIO_PIN_13
 #define FLASH_SPI_DEVICE     (&hspi3)
-
-extern UART_HandleTypeDef huart2;
-extern SPI_HandleTypeDef hspi3;
 
 #endif /* PLATFORM_CONFIG_H_ */
