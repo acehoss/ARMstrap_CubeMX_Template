@@ -28,7 +28,25 @@ runs on Windows.)
    This will generate the initialization code for all of your
    configured peripherals. The code is generated into the *Inc*,
    *Src*, and *Drivers* directories.
-7. Now you can do your work. 
+7. Before the code will build, you need to select the platform
+   in the CMSIS driver. Open the file `Drivers/ST/STM32F4xx/Include/stm32f4xx.h`
+   and find the line that corresponds to your chip. I have the
+   STM32F427, so I will change the line
+   `/* #define STM32F427xx */  /*!< STM32F427VG, STM32F427VI, STM32F427ZG, STM32F427ZI, STM32F427IG and STM32F427II Devices */`
+   to
+   `#define STM32F427xx  /*!< STM32F427VG, STM32F427VI, STM32F427ZG, STM32F427ZI, STM32F427IG and STM32F427II Devices */`
+
+   If you try to build before this, you'll get many, many errors.
+   After uncommenting the appropriate line, you should be able
+   to build successfully.
+8. One thing I haven't figured out yet (not sure if it's even 
+   possible) is to persist the debug configurations in the project. 
+   They appear to be stored at the workspace level. So when you 
+   import the project, it will not be set up to run. What I 
+   recommend is to open one of the ARMstrap projects as well, then
+   add the debug configuration by copying the settings from the
+   existing project. 
+9. Now you can do your work. 
 
    When editing the generated *main.c*,
    pay special attention to the generated comments. There are
@@ -48,14 +66,6 @@ runs on Windows.)
    the code will be out of sync with the Cube file, and you will
    lose your changes if you choose to generate code again from
    Cube and forget to replicate your changes first.
-
-8. One thing I haven't figured out yet (not sure if it's even 
-   possible) is to persist the debug configurations in the project. 
-   They appear to be stored at the workspace level. So when you 
-   import the project, it will not be set up to run. What I 
-   recommend is to open one of the ARMstrap projects as well, then
-   add the debug configuration by copying the settings from the
-   existing project.
 
 Good luck! Also check out [https://github.com/hossboss/ARMstrap_Modules](https://github.com/hossboss/ARMstrap_Modules)
 for some modules I've created for use in this project structure.
