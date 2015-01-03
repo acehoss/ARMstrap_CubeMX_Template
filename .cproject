@@ -37,8 +37,8 @@
 									<listOptionValue builtIn="false" value="../Drivers/STM32F4xx_HAL_Driver/Inc"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
 									<listOptionValue builtIn="false" value="../Inc"/>
-									<listOptionValue builtIn="false" value="../Modules/U8Glib"/>
 									<listOptionValue builtIn="false" value="../Modules"/>
+									<listOptionValue builtIn="false" value="../Drivers/CMSIS/RTOS"/>
 								</option>
 								<option id="gnu.c.compiler.option.misc.other.2083814713" name="Other flags" superClass="gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -MD -fno-common -fdata-sections -ffunction-sections" valueType="string"/>
 								<option id="gnu.c.compiler.option.dialect.std.721636808" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c99" valueType="enumerated"/>
@@ -54,11 +54,11 @@
 									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.include.paths.2082571707" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="../Drivers/CMSIS/RTOS"/>
 									<listOptionValue builtIn="false" value="../Drivers/STM32F4xx_HAL_Driver/Inc"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Include"/>
 									<listOptionValue builtIn="false" value="../Inc"/>
-									<listOptionValue builtIn="false" value="../Modules/U8Glib"/>
 									<listOptionValue builtIn="false" value="../Modules"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.other.other.354977444" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-c -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -MD -fno-common -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti" valueType="string"/>
@@ -118,8 +118,8 @@
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Include"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
 									<listOptionValue builtIn="false" value="../Inc"/>
-									<listOptionValue builtIn="false" value="../Modules/U8Glib"/>
 									<listOptionValue builtIn="false" value="../Modules"/>
+									<listOptionValue builtIn="false" value="../Drivers/CMSIS/RTOS"/>
 								</option>
 								<option id="gnu.c.compiler.option.misc.other.847765503" name="Other flags" superClass="gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -MD -fno-common" valueType="string"/>
 								<option id="gnu.c.compiler.option.dialect.std.1942737524" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c99" valueType="enumerated"/>
@@ -135,13 +135,11 @@
 									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.include.paths.1373624370" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="../Drivers/CMSIS/RTOS"/>
 									<listOptionValue builtIn="false" value="../Drivers/STM32F4xx_HAL_Driver/Inc"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Include"/>
-									<listOptionValue builtIn="false" value="../Drivers/U8G/Include"/>
-									<listOptionValue builtIn="false" value="../Drivers/SPI/Include"/>
 									<listOptionValue builtIn="false" value="../Inc"/>
-									<listOptionValue builtIn="false" value="../Modules/U8Glib"/>
 									<listOptionValue builtIn="false" value="../Modules"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.other.other.278865716" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-c -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -MD -fno-common -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti" valueType="string"/>
